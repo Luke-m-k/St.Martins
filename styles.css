@@ -23,15 +23,18 @@ header {
     padding: 0 2rem;
     background-color: var(--Primary-Color);
     color: #fff;
+    overflow: hidden;
 }
 
 .nav {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    gap: 2rem;
     font-size: 1.2rem;
     font-weight: 600;
+    gap: 2vw;
+    color: var(--Accent-Color-2);
+    overflow: hidden;
 }
 
 a {
@@ -39,7 +42,11 @@ a {
     color: inherit;
     border-radius: 3px;
     padding: .2rem;
+    overflow: hidden;
 }
+
+background-color: var(--Primary-Color);
+    color: #fff;
 
 a:hover {
     box-shadow: 0 0 3px rgb(128, 116, 116);
@@ -61,12 +68,31 @@ h1 {
 }
 
 #BriefHistory {
-    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
+    background-color: var(--Primary-Color);
+    color: #fff;
+    box-shadow: 0 0 15px var(--Primary-Color);
+}
+
+.hidden {
+    display: none;
+}
+
+.show-text {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: .9rem;
+    color: #bbb;
+    cursor: pointer;
 }
 
 #Location {
-    background-color: var(--Primary-Color);
-    color: #fff;
+    color: var(--Text-Color);
     padding: 1rem 0;
 }
 
@@ -80,7 +106,6 @@ h2 {
     margin: 0 auto;
     display: block;
     box-shadow: 0 0 3px #222;
-    border: 2px solid #000;
     border-radius: 5px;
 }
 
@@ -93,6 +118,13 @@ h2 {
 
 .program-container {
     width: 200px;
+    background-color: var(--Accent-Color-1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--Accent-Color-1);
+    color: #fff;
+    margin: .5rem;
+    flex: 1;
 }
 
 .program-icon {
@@ -132,7 +164,7 @@ textarea {
     padding-left: 0.5rem;
 }
 
-button {
+.button {
     display: block;
     margin: 1rem auto 0 auto;
     padding: .5rem;
@@ -142,8 +174,27 @@ button {
     box-shadow: 0 0 3px #000;
 }
 
-button:hover {
+button {
+    background-color: var(--Accent-Color-2);
+}
+
+.button:hover {
     box-shadow: 0 0 0 #fff;
+}
+
+#question-form {
+    background-color: var(--Accent-Color-1);
+    color: #fff;
+}
+
+input, textarea {
+    background-color: #ddd;
+}
+
+.footer{
+    background-color: var(--Primary-Color);
+    color: #fff;
+    margin-top: 1rem;
 }
 
 #contacts {
@@ -171,8 +222,9 @@ button:hover {
     width: 40%;
 }
 
-.italics {
+#copyright-text {
     font-style: italic;
+    text-align: center;
 }
 
 #links {
@@ -184,4 +236,15 @@ button:hover {
 .footer-icon {
     margin: .5rem;
     font-size: 1.8rem;
+}
+
+/* Media query for small screens.*/
+@media only screen and (max-width: 800px) {
+    a {
+        font-size: .8rem;
+    }
+
+    #map {
+        height: 25vh;
+    }
 }
