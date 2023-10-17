@@ -79,7 +79,7 @@ h1 {
     display: none;
 }
 
-.show-text {
+#show-text {
     margin: 0;
     padding: 0;
     border: none;
