@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app2.js" defer></script>
+    <title>St Martins Groups</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="Church Logo">
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./groups.html">Groups</a></li>
+            <li><a href="./SCC.html">Jumuiyas</a></li>
+            <li><a href="./events.html">Events</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <h1>Groups</h1>
+        <div id="main-church-groups">
+            <div id="CMA" class="group">
+                <h3>Catholic Men Action</h3>
+                <img src="./Photos/CMA-StMartins.jpg" alt="A Photo of a few CMA members" class="main-group-photo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit rem vel veniam dignissimos voluptates atque suscipit doloribus numquam nostrum eveniet, perferendis quae laborum iusto cum ducimus dicta et distinctio.</p>
+            </div>
+            <div id="CWA" class="group">
+                <h3>Catholic Women Association</h3>
+                <img src="" alt="A Photo of a few CWA members" class="main-group-photo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, architecto, exercitationem numquam molestias fuga voluptas dicta voluptatem nam assumenda nulla earum laboriosam tempore praesentium facere voluptates voluptatibus totam non. Doloribus.</p>
+            </div>
+            <div id="YCW" class="group">
+                <h3>Young Christian Workers</h3>
+                <img src="" alt="A photo of a few YCW members" class="main-group-photo">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus pariatur voluptatum perspiciatis earum ullam eum quasi sed labore ex. Nulla adipisci ratione nisi asperiores a facilis nemo ipsa atque.</p>
+            </div>
+            <div id="Youth" class="group">
+                <h3>Youth Serving Christ</h3>
+                <img src="" alt="A photo of a few members of the Youth" class="main-group-photo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptatibus, autem dolores reprehenderit cumque velit soluta exercitationem tenetur error atque quaerat assumenda aspernatur, magnam dolorem officia? Ut eos vel alias.</p>
+            </div>
+            <div id="MYM" class="group">
+                <h3>Middle Youth Movement</h3>
+                <img src="" alt="A photo of a few members of the MYM" class="main-group-photo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam architecto totam odit natus expedita perspiciatis. Nihil, odio vitae quia, rerum aliquid quidem voluptatibus ullam eligendi mollitia minus maiores cum sunt.</p>
+            </div>
+            <div id="PMC" class="group">
+                <h3>Pontifical Missionary Childhood</h3>
+                <img src="" alt="A photo of a few members of PMC" class="main-group-photo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quasi saepe. Voluptatibus tenetur ipsum voluptatem molestiae sequi dignissimos aspernatur nesciunt, alias veniam autem magnam tempore laborum velit accusamus quibusdam eveniet.</p>
+            </div>
+        </div>
+
+        <p>Want to Join a Group? <button id="join-group" class="button">Click here</button></p>
+
+        <form action="" class="form hidden">
+            <label for="name">Name: </label>
+            <input id="name" type="text">
+            <label for="age">Age: </label>
+            <input id="age" type="text">
+            <label for="phoneNo">Phone No: </label>
+            <input id="phoneNo" type="text">
+            <label for="group">Choose a Group:</label>
+            <select id="group">
+                <option value="">Catholic Men Action</option>
+                <option value="">Catholic Women Association</option>
+                <option value="">Young Christian Workers</option>
+                <option value="">Youth Serving Christ</option>
+                <option value="">Middle Youth Movement</option>
+                <option value="">Pontifical Missionary Childhood</option>
+            </select>
+            <button class="button">Submit</button>
+        </form>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div id="contacts">
+            <div class="contact">
+                <i class="fa-solid fa-phone contact-icon"></i>
+                <p class="contact-text">+254 712 345 678</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <p class="contact-text">info@stmartinsdeporres.org</p>
+            </div>
+        </div>
+
+        <div id="extra-info">
+            <p class="text" id="extra-info-text">We appreciate all the support and donations to the parish and we pray it shall continue. Our MPESA pay bill number: ******, Account Number: sadaka(for offertory) and tithe(for tithe).</p>
+            <div id="extra-info-address">
+                <h3>St Martins DePorres Catholic Church</h3>
+                <p>Mugutha</p>
+                <p>PO BOX: 00000 - 00100</p>
+                <p>Kiambu, Kenya</p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p id="copyright-text" class="italics">Copyright <i class="fa-solid fa-copyright"></i>2023 St. Martin's DePorres. All Rights Reserved.</p>
+        </div>
+
+        <div id="links">
+            <i class="fa-brands fa-facebook footer-icon"></i>
+            <i class="fa-brands fa-square-instagram footer-icon"></i>
+            <i class="fa-brands fa-square-whatsapp footer-icon"></i>
+            <i class="fa-solid fa-phone footer-icon"></i>
+        </div>
+    </footer>
+</body>
+</html>
