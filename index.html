@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./waves.css">
     <script src="./app.js" defer></script>
     <title>St Martins DePorres</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Church Logo">
+        <div class="logo">
+            <div class="circle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <ul class="nav">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./groups.html">Groups</a></li>
@@ -22,8 +28,48 @@
         </ul>
     </header>
 
+    <!-- Waves container -->
+    
     <main>
-        <h1>St Martins De Porres</h1>
+        <div class="head-title">
+            <h1>St Martins De Porres Catholic church</h1>
+        </div>
+
+        <div>
+            <svg class="waves"
+                viewbox="0 24 150 28"
+                preserveAspectRatio="none"
+                shape-rendering="auto">
+    
+                <defs>
+                    <path 
+                        id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                    />
+                </defs>
+                <g class="parallax">
+                    <use 
+                        xlink:href="#gentle-wave"
+                        x="48"
+                        y="0"
+                        fill="rgba(101, 67, 33, 0.7)"
+                    />
+                    <use 
+                        xlink:href="#gentle-wave"
+                        x="48"
+                        y="3"
+                        fill="rgba(101, 67, 33, 0.5)"
+                    />
+                    <use 
+                        xlink:href="#gentle-wave"
+                        x="48"
+                        y="5"
+                        fill="rgba(101, 67, 33, 1)"
+                    />
+                </g>
+        
+            </svg>
+        </div>
         <img src="https://lh3.googleusercontent.com/p/AF1QipNgQK3yfA8pmMJENxdhixpi4q9omrfsNLjaCOZT=s680-w680-h510" id="ChurchPhoto" loading="lazy">
         <div>
             <p id="BriefHistory">Saint Martin de Porres Catholic Church - Mugutha, was founded on the first Holy Mass, 2nd November 2003
@@ -59,32 +105,33 @@
             <div class="program-container">
                 <i class="fa-solid fa-church program-icon"></i>
                 <h3>Mass</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repudiandae amet odit, provident nisi culpa debitis nemo inventore iure, quam earum totam vel vero eius saepe omnis doloribus id suscipit.</p>
+                <p>mass st martin de pores catholic church mugutha we have only one Sunday mass From 8am- 10 am All are welcome</p>
             </div>
             <div class="program-container">
                 <i class="fa-solid fa-hands-praying program-icon"></i>
                 <h3>Confessions</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reiciendis expedita. Saepe, laborum! Ullam, reiciendis saepe. At, facere numquam doloribus eius natus, debitis animi distinctio ab deserunt perspiciatis iure. Soluta.</p>
+                <p>confessions are available when officially announced from the parish. Special requests are made if individuals want confession after mass</p>
             </div>
             <div class="program-container">
                 <i class="fa-solid fa-water program-icon"></i>
                 <h3>Baptism</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis, architecto dolor dicta, debitis deserunt consectetur harum rem quisquam amet consequatur ex illum sapiente facilis magnam maiores eum ut blanditiis?</p>
+                <p>baptism is available when officially anounced from the parish</p>
             </div>
             <div class="program-container">
                 <i class="fa-solid fa-graduation-cap program-icon"></i>
                 <h3>Catechism</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non in labore, eaque tempora enim voluptatibus? Voluptas neque architecto alias libero corporis quis asperiores, harum atque quo cum mollitia fugiat qui.</p>
+                <p>catechism classes are always available. Children have their classes on Saturday at 2 – 4 pm.The schedule might change during the holidays .Official announcements on the changes are announced in the church. Adult catechism takes place in st Francis (parish) </p>
             </div>
             <div class="program-container">
                 <i class="fa-solid fa-hands-asl-interpreting program-icon" id="program-icon"></i>
                 <h3>Weddings</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis sapiente incidunt dolore eaque, accusantium mollitia ex magni odit omnis, necessitatibus consequatur sequi architecto voluptate unde ducimus, ratione eum natus!</p>
+                <p>weddings
+                    one can book their wedding any time in the parish(st Francis). Then marriage  preparation classes by the catechist schedule mostly after the main mas</p>
             </div>
         </div>
         <div id="Questions">
-            <h2>Questions</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem dolor enim quaerat animi fuga iusto, similique porro laboriosam unde nam possimus iste modi, fugiat mollitia nesciunt, sint veritatis ducimus.</p>
+            <h2>FAQs</h2>
+            <p>Ask any questions</p>
             <button id="question-button" class="button">Get in Touch</button>
             <form id="question-form" action="" class="form hidden">
                 <label for="name">Name: </label>

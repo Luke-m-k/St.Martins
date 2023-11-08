@@ -1,0 +1,46 @@
+.waves {
+    position: absolute;
+    top: calc(-15vh);
+    left: 0;
+    width: 100%;
+    height: 15vh;
+}
+
+.head-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    top: calc(-15vh - 45px);
+}
+
+#Questions {
+    padding: 0 60px;
+    color: #fff;
+}
+
+.logo .circle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo .circle span:nth-child(1){
+    width: 20px;
+    height: 2px;
+    background: #fff;
+}
+.logo .circle span:nth-child(2){
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+}
+
+.footer {
+    position: relative;
+}
