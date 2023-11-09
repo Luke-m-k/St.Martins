@@ -6,12 +6,12 @@
     --Text-Color: #333333;
 }
 
-main {
+/*main {
     background: var(--Primary-Color);
     position: relative;
     margin-top: calc(65px + 15vh);
     margin-bottom: calc(40px + 15vh);
-}
+}*/
 
 body {
     margin: 0;
@@ -57,25 +57,121 @@ a:hover {
     box-shadow: 0 0 3px rgb(128, 116, 116);
 }
 
+#svgContainer {
+    position: relative;
+    min-height: 8rem;
+    margin-bottom: -5px;
+}
+
+/*SVG styling*/
+.custom-shape-divider-bottom-1699543576 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1699543576 svg {
+    position: relative;
+    display: block;
+    width: calc(282% + 1.3px);
+    height: 149px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1699543576 .shape-fill {
+    fill: var(--Primary-Color);
+}
+
+/** For mobile devices 
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1699543576 svg {
+        width: calc(152% + 1.3px);
+        height: 53px;
+    }
+}
+
+/** For mobile devices
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1699543464 svg {
+        width: calc(100% + 1.3px);
+        height: 92px;
+    }
+}
+
+/** For mobile devices
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1699543367 svg {
+        width: calc(100% + 1.3px);
+        height: 18px;
+    }
+}
+
+/** For mobile devices
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1699543236 svg {
+        width: calc(150% + 1.3px);
+        height: 30px;
+    }
+}
+
+/** For mobile devices
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1699542825 svg {
+        width: calc(233% + 1.3px);
+        height: 29px;
+    }
+}
+
+/** For mobile devices 
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1699542619 svg {
+        width: calc(200% + 1.3px);
+        height: 56px;
+    }
+}
+
+/** For mobile devices 
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1699542070 svg {
+        width: calc(221% + 1.3px);
+        height: 44px;
+    }
+}**/
+
 h1 {
     text-align: center;
     font-size: 2.5rem;
 }
 
-#ChurchPhoto {
-    display: block;
-    width: 90%;
+#AboutUs{
+    background-color: var(--Primary-Color);
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.aboutUsPhoto{
+    display: inline-block;
+    width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 4px #333;
     margin-bottom: 2rem;
+    align-self: center;
 }
 
-#BriefHistory {
+.briefHistory {
     padding: 1rem;
     line-height: 1.5;
-    background-color: var(--Primary-Color);
     color: #fff;
     box-shadow: 0 0 15px var(--Primary-Color);
 }
@@ -96,22 +192,18 @@ h1 {
     cursor: pointer;
 }
 
-#Location {
-    color: var(--Text-Color);
-    padding: 1rem 0;
-}
-
-h2 {
+.massProgram{
+    margin: 2rem 1.5rem;
     text-align: center;
 }
 
-#map {
-    width: 90%;
-    height: 40vh;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 0 3px #222;
-    border-radius: 5px;
+.massPhoto{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.larger-program-icon{
+    font-size: 5rem;
 }
 
 #Programs {
@@ -123,18 +215,17 @@ h2 {
 
 .program-container {
     width: 200px;
+    margin: .5rem;
+    flex: 1;
     background-color: var(--Accent-Color-1);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 3px var(--Accent-Color-1);
     color: #fff;
-    margin: .5rem;
-    flex: 1;
 }
 
 .program-icon {
     font-size: 3rem;
-    
 }
 
 form {
@@ -197,6 +288,32 @@ button {
     box-shadow: 0 0 0 #fff;
 }
 
+#Questions{
+    background-color: var(--Accent-Color-1);
+    color: var(--Background-Color);
+    padding: 1rem;
+}
+
+#Location {
+    color: var(--Background-Color);
+    padding: 1rem 0;
+    background-color: var(--Background-Color);
+}
+
+h2 {
+    text-align: center;
+}
+
+#map {
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 3px #222;
+    border-radius: 5px;
+}
+
+
 .footer{
     background-color: var(--Primary-Color);
     color: #fff;
@@ -245,7 +362,7 @@ button {
 }
 
 /* Media query for small screens.*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     a {
         font-size: .8rem;
     }
@@ -257,6 +374,13 @@ button {
     #question-form {
         width: 60%;
     }
+    .aboutUsContainer{
+        flex-direction: column;
+    }
+    .aboutUsPhoto{
+        width: 90%;
+    }
+
 }
 
 /* Communities */
