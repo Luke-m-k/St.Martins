@@ -228,12 +228,13 @@ h1 {
     font-size: 3rem;
 }
 
-form {
+.form {
     border: 0px solid #000;
     box-shadow: 0 0 3px #000;
     margin: 1.5rem auto;
     padding: 1rem;
     width: 40%;
+    max-width: 300px;
     border-radius: 5px;
     background-color: var(--Accent-Color-1);
     color: #fff;
@@ -255,8 +256,10 @@ input, textarea, select {
 
 input, select {
     width: 90%;
-    height: 1.2rem;
+    height: 1.5rem;
     padding-left: 0.5rem; 
+    border: 0;
+    border-radius: 5px;
 }
 
 textarea {
@@ -296,16 +299,22 @@ button {
 
 .questionsContainer{
     display: flex;
+    gap: 1rem;
 }
 
 .f-item{
     flex: 1;
 }
 
+.larger-text{
+    font-size: 1.5rem;
+}
+
 #Location {
+    position:relative;
     color: var(--Text-Color);
     padding: 1rem 0;
-    background-color: var(--Background-Color);
+    background-color: #ccc;
 }
 
 h2 {
@@ -420,4 +429,36 @@ h2 {
 
 legend {
     margin-bottom: .5rem;
+}
+
+/* SVG */
+.custom-shape-divider-top-1699553528 {
+    position: relative;
+    margin-top: -1.2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1699553528 svg {
+    position: relative;
+    display: block;
+    width: calc(282% + 1.3px);
+    height: 149px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1699553528 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1699553528 svg {
+        width: calc(300% + 1.3px);
+        height: 5px;
+    }
 }
