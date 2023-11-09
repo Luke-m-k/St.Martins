@@ -144,20 +144,21 @@
             </div>
         </div>
         <div id="Questions">
-            <h2>FAQs</h2>
-            <p>Ask any questions</p>
-            <button id="question-button" class="button">Get in Touch</button>
-            <form id="question-form" action="" class="form hidden">
-                <label for="name">Name: </label>
-                <input id="name" type="text" placeholder="Enter your Name">
-                <label for="email">Email: </label>
-                <input id="email" type="email" placeholder="example@gmail.com">
-                <label for="phoneNo">Phone No: </label>
-                <input id="phoneNo" type="text" placeholder="+254 *** *** ***">
-                <label for="question">Question: </label>
-                <textarea name="question" id="question" placeholder="How can I ..."></textarea>
-                <button id="FormButton" class="button">Submit</button>
-            </form>
+            <h2>Questions</h2>
+            <div class="questionsContainer">
+                <p class="f-item">Ask any questions</p>
+                <form id="question-form" action="" class="form f-item">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Name" required>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email">
+                    <label for="phoneNo">Phone No: </label>
+                    <input id="phoneNo" type="text">
+                    <label for="question">Question: </label>
+                    <textarea name="question" id="question"></textarea>
+                    <button id="FormButton" class="button">Submit</button>
+                </form>
+            </div>
         </div>
 
         <div id="Location">

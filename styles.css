@@ -289,13 +289,21 @@ button {
 }
 
 #Questions{
-    background-color: var(--Accent-Color-1);
-    color: var(--Background-Color);
+    color: var(--Text-Color);
+    background-color: var(--Background-Color);
     padding: 1rem;
 }
 
+.questionsContainer{
+    display: flex;
+}
+
+.f-item{
+    flex: 1;
+}
+
 #Location {
-    color: var(--Background-Color);
+    color: var(--Text-Color);
     padding: 1rem 0;
     background-color: var(--Background-Color);
 }
