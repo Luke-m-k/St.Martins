@@ -314,7 +314,6 @@ button {
     position:relative;
     color: var(--Text-Color);
     padding: 1rem 0;
-    background-color: #ccc;
 }
 
 h2 {
@@ -431,34 +430,14 @@ legend {
     margin-bottom: .5rem;
 }
 
-/* SVG */
-.custom-shape-divider-top-1699553528 {
-    position: relative;
-    margin-top: -1.2rem;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+/*Small Christian Communities*/
+.SCCs{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.custom-shape-divider-top-1699553528 svg {
-    position: relative;
-    display: block;
-    width: calc(282% + 1.3px);
-    height: 149px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1699553528 .shape-fill {
-    fill: #FFFFFF;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-top-1699553528 svg {
-        width: calc(300% + 1.3px);
-        height: 5px;
-    }
+.main-group-photo{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
 }
