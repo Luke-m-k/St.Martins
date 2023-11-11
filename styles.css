@@ -1,3 +1,5 @@
+/* **** GENERAL STYLING **** */
+
 :root {
     --Primary-Color: #654321;
     --Accent-Color-1: #8B4513;
@@ -5,13 +7,6 @@
     --Background-Color: #FFFFFF;
     --Text-Color: #333333;
 }
-
-/*main {
-    background: var(--Primary-Color);
-    position: relative;
-    margin-top: calc(65px + 15vh);
-    margin-bottom: calc(40px + 15vh);
-}*/
 
 body {
     margin: 0;
@@ -23,7 +18,7 @@ body {
     font-family: 'Roboto Serif', serif;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,29 +37,36 @@ header {
     font-weight: 600;
     gap: 2vw;
     color: var(--Accent-Color-2);
-    overflow: hidden;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: inherit;
-    border-radius: 3px;
-    padding: .2rem;
-    overflow: hidden;
+    padding: .5rem;
+    border-radius: 10px;
+    /*overflow: hidden;*/
 }
 
-a:hover {
-    box-shadow: 0 0 3px rgb(128, 116, 116);
+.current-page {
+    border-bottom: 3px solid var(--Accent-Color-2);
+
+
+    box-shadow: 0 0 3px var(--Accent-Color-2);
+
 }
 
-#svgContainer {
+.nav-link:hover {
+    box-shadow: 0 0 3px var(--Accent-Color-2);
+}
+
+/*#svgContainer {
     position: relative;
     min-height: 8rem;
     margin-bottom: -5px;
-}
+}*/
 
 /*SVG styling*/
-.custom-shape-divider-bottom-1699543576 {
+/*.custom-shape-divider-bottom-1699543576 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -84,7 +86,7 @@ a:hover {
 
 .custom-shape-divider-bottom-1699543576 .shape-fill {
     fill: var(--Primary-Color);
-}
+}*/
 
 /** For mobile devices 
 @media (max-width: 767px) {
@@ -142,90 +144,13 @@ a:hover {
     }
 }**/
 
-h1 {
+.main-heading {
     text-align: center;
     font-size: 2.5rem;
 }
 
-#AboutUs{
-    background-color: var(--Primary-Color);
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutUsContainer {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.aboutUsPhoto{
-    display: inline-block;
-    width: 50%;
-    height: auto;
-    margin: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 4px #333;
-    margin-bottom: 2rem;
-    align-self: center;
-}
-
-.briefHistory {
-    padding: 1rem;
-    line-height: 1.5;
-    color: #fff;
-    box-shadow: 0 0 15px var(--Primary-Color);
-}
-
-.hidden {
-    display: none;
-}
-
-#show-text {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: none;
-    font-family: inherit;
-    font-size: .9rem;
-    color: #bbb;
-    cursor: pointer;
-}
-
-.massProgram{
-    margin: 2rem 1.5rem;
-    text-align: center;
-}
-
-.massPhoto{
-    width: 80%;
-    border-radius: 10px;
-}
-
-.larger-program-icon{
+.larger-icon{
     font-size: 5rem;
-}
-
-#Programs {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    flex-wrap: wrap;
-}
-
-.program-container {
-    width: 200px;
-    margin: .5rem;
-    flex: 1;
-    background-color: var(--Accent-Color-1);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 3px var(--Accent-Color-1);
-    color: #fff;
-}
-
-.program-icon {
-    font-size: 3rem;
 }
 
 .form {
@@ -291,45 +216,6 @@ button {
     box-shadow: 0 0 0 #fff;
 }
 
-#Questions{
-    color: var(--Text-Color);
-    background-color: var(--Background-Color);
-    padding: 1rem;
-}
-
-.questionsContainer{
-    display: flex;
-    gap: 1rem;
-}
-
-.f-item{
-    flex: 1;
-}
-
-.larger-text{
-    font-size: 1.5rem;
-}
-
-#Location {
-    position:relative;
-    color: var(--Text-Color);
-    padding: 1rem 0;
-}
-
-h2 {
-    text-align: center;
-}
-
-#map {
-    width: 90%;
-    height: 40vh;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 0 3px #222;
-    border-radius: 5px;
-}
-
-
 .footer{
     background-color: var(--Primary-Color);
     color: #fff;
@@ -377,29 +263,121 @@ h2 {
     font-size: 1.8rem;
 }
 
-/* Media query for small screens.*/
-@media only screen and (max-width: 900px) {
-    a {
-        font-size: .8rem;
-    }
-
-    #map {
-        height: 25vh;
-    }
-
-    #question-form {
-        width: 60%;
-    }
-    .aboutUsContainer{
-        flex-direction: column;
-    }
-    .aboutUsPhoto{
-        width: 90%;
-    }
-
+.large-icon {
+    font-size: 3rem;
 }
 
-/* Communities */
+
+/* **** HOME PAGE **** */
+
+#AboutUs{
+    background-color: var(--Primary-Color);
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.aboutUsPhoto{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #333;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.briefHistory {
+    padding: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    box-shadow: 0 0 15px var(--Primary-Color);
+}
+
+.hidden {
+    display: none;
+}
+
+.massProgram{
+    margin: 2rem 1.5rem;
+    text-align: center;
+}
+
+.massPhoto{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+}
+
+#Programs {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.program-container {
+    width: 200px;
+    margin: .5rem;
+    flex: 1;
+    background-color: var(--Accent-Color-1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--Accent-Color-1);
+    color: #fff;
+}
+
+
+
+.questions-section{
+    color: var(--Text-Color);
+    background-color: var(--Background-Color);
+    padding: 1rem;
+}
+
+.questionsContainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.larger-text{
+    font-size: 1.5rem;
+}
+
+#Location {
+    position:relative;
+    color: var(--Text-Color);
+    padding: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#map {
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 3px #222;
+    border-radius: 5px;
+}
+
+
+
+
+/* Media query for small screens.*/
+
+
+
+/* **** GROUPS **** */
+
 #main-church-groups {
     display: flex;
     justify-content: space-evenly;
@@ -426,17 +404,14 @@ h2 {
     box-shadow: 0 0 3px #999;
 }
 
-legend {
-    margin-bottom: .5rem;
-}
+/* **** SCCS **** */
 
-/*Small Christian Communities*/
 .SCCs{ 
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.main-group-photo{
+.saint-photo{
     width: 20%;
     height: auto;
     border-radius: 50%;
