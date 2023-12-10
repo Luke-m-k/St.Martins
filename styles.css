@@ -158,8 +158,8 @@ body {
     box-shadow: 0 0 3px #000;
     margin: 1.5rem auto;
     padding: 1rem;
-    width: 40%;
-    max-width: 300px;
+    width: 60vw;
+    max-width: 500px;
     border-radius: 5px;
     background-color: var(--Accent-Color-1);
     color: #fff;
@@ -265,6 +265,8 @@ button {
 
 .large-icon {
     font-size: 3rem;
+    text-align: center;
+    display: block;
 }
 
 
@@ -298,6 +300,8 @@ button {
     color: #fff;
     box-shadow: 0 0 15px var(--Primary-Color);
 }
+
+
 
 .hidden {
     display: none;
@@ -340,7 +344,7 @@ button {
     padding: 1rem;
 }
 
-.questionsContainer{
+questionsContainer{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
@@ -360,6 +364,14 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
+#AboutUs-header {
+    color: #fff;
+}
+
 #map {
     width: 90%;
     height: 40vh;
@@ -377,6 +389,10 @@ h2 {
 
 
 /* **** GROUPS **** */
+.major-group {
+    text-align: center;
+    margin: 3rem;
+}
 
 #main-church-groups {
     display: flex;
@@ -415,4 +431,8 @@ h2 {
     width: 20%;
     height: auto;
     border-radius: 50%;
+    margin: 1rem auto;
+    display: block;
+    border: .1rem solid black;
+    box-shadow:0 0 .1rem #000;
 }
